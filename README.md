@@ -1,4 +1,4 @@
-# Webpack UIKit 3 app template
+# Webpack UIKit 3 
 
 ### Description
 
