@@ -1,29 +1,21 @@
 {
-  "name": "webpack-uikit",
-  "version": "1.0.3",
-  "description": "Webpack UIKit app template",
-  "scripts": {
-    "build": "webpack --mode=development --progress --hide-modules",
-    "production": "webpack --mode=production --progress --hide-modules --devtool=source-maps",
-    "watch": "webpack --mode=development --watch",
-    "start": "webpack-dev-server --open --mode=development",
-    "clear": "del-cli dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/manchenkoff/webpack-uikit.git"
-  },
+  "name": "likey-chat",
+  "version": "1.0.1",
+  "description": "likey-chat",
+  "private": true,
   "keywords": [
     "webpack",
-    "manchenkoff",
-    "frontend"
+    "uikit",
+    "frontend",
+    "likey-chat"
   ],
-  "author": "Artyom Manchenkov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/manchenkoff/webpack-uikit/issues"
+  "scripts": {
+    "watch": "webpack --mode=development --watch",
+    "start": "webpack-dev-server --open --mode=development",
+    "build": "webpack --mode=development --progress --hide-modules",
+    "production": "webpack --mode=production --progress --hide-modules --devtool=source-maps",
+    "clear": "del-cli dist"
   },
-  "homepage": "https://github.com/manchenkoff/webpack-uikit#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.1.2",
