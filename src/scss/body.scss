@@ -1,0 +1,17 @@
+@import "./common/index";
+
+body {
+  font-family: $font-family-default;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: $gray-800;
+  height: 100%;
+}
+
+.like-body {
+  .like-banner {
+    margin-top: -$header-height;
+    .like-banner-bg {
+      width: 100%;
+    }
+  }
+}
