@@ -2,6 +2,7 @@
 //$global-link-color: #DA7D02;
 
 // 2. Import default variables and available mixins
+@import "~swiper/dist/css/swiper.min.css";
 @import "~uikit/src/scss/variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
 
@@ -15,3 +16,9 @@
 @import "./header.scss";
 @import "./body.scss";
 @import "./footer.scss";
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}

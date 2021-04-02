@@ -1,8 +1,31 @@
+import Swiper from 'swiper';
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 
-// loads the Icon plugin
-UIkit.use(Icons);
+UIkit.use(Icons); // loads the Icon plugin
 
-// components can be called from the imported UIkit reference
-UIkit.notification('Webpack UIKit 3 bundle loaded!');
+UIkit.util.ready(() => {
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth <= 717) {
+                    document.body.classList.add('mobile');
+                } else {
+                    document.body.classList.remove('mobile');
+                }
+                docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        recalc()
+    })(document, window);
+    new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        autoplay: 2500
+    });
+})
+

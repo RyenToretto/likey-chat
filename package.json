@@ -35,6 +35,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "swiper": "^3.4.2",
     "uikit": "^3.5.8"
   }
 }

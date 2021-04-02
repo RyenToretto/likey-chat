@@ -1,11 +1,21 @@
+@import "./func";
+
 $white: #ffffff;
 $black: #000000;
 
-$primary: #348fe4;
-$primary-hover: #1e83e1;
-$primary-dark: #358FE5;
-$primary-dark-hover: #2082E1;
-$primary-btn-shadow: rgba(53, 143, 229, 0.47);
+$primary: #ff6076;
+$primary-hover: #d85d72;
+$primary-dark: #ff6077;
+$primary-dark-hover: #ee5d6f;
+$primary-btn-shadow: #ff6076;
+$primary-btn-shadow: rgba(255, 96, 118, 0.47);
+
+$primary-green: #65d072;
+$primary-green-hover: #4fcd6d;
+$primary-green-dark: #66d073;
+$primary-green-dark-hover: #51e86d;
+$primary-green-btn-shadow: #66d073;
+$primary-green-btn-shadow: rgba(102, 208, 115, 0.47);
 
 $gray-70: #fdfdfd; // 内容区域背景色，用于整个内容的背景色，sidebar 背景色
 $gray-80: #fafafa; // 选项鼠标移上去的背景色，主要用于表格 Hover 移上去的颜色 和表格的编号背景色,

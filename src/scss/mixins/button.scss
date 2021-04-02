@@ -6,7 +6,6 @@
         padding: 0 18px;
         height: 32px;
         line-height: 32px;
-        font-size: 1rem;
         transition: 300ms;
         font-weight: 400;
 
@@ -30,9 +29,6 @@
             line-height: 48px;
         }
 
-        &.btn-sm {
-        }
-
         &.btn-outline {
             color: $primary;
             background-color: $white;
@@ -43,17 +39,51 @@
             }
         }
         &.should-reverse-color {
-            color: $primary;
-            background-color: $white;
+            color: $white;
+            background-color: $primary;
             &.btn-outline {
+                color: $primary;
+                background-color: $white;
+                border-color: $primary;
+                &:hover,
+                &:focus {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+            &.opacity-bg {
                 color: $white;
-                background-color: $primary;
+                background-color: transparent;
                 border-color: $white;
                 &:hover,
                 &:focus {
-                    background-color: $white;
-                    color: $primary;
+                    background-color: $primary;
+                    color: $white;
                 }
+                &:focus {
+                    background-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+        &.primary-green-btn {
+            color: $white;
+            background-color: $primary-green;
+            border-color: $white;
+            &:hover,
+            &:focus {
+                background-color: $primary-green-hover;
+                color: $white;
+            }
+        }
+        &.primary-black-btn {
+            color: $white;
+            background-color: $black;
+            border-color: $white;
+            &:hover,
+            &:focus {
+                background-color: $black;
+                color: $white;
             }
         }
     }
